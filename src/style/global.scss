@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,200;1,300&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: rgb(85, 85, 233);
+}
+
+.conteiner{
+  width: 80%;
+  margin:auto;
+
+  .personagens{
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .card{
+    background: #FFF;
+    padding: 12px;
+    margin: 16px;
+    text-align: center;
+    border-radius: 15px;
+
+    &>img{
+      width: 200px;
+      height: auto;
+    }
+  }
+}
+
+.buttons{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  .button{
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 12px;
+    background: orange;
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+
+    &:hover{
+      transition: .6s;
+      background: black;
+      color:orange;
+      cursor: pointer;
+    }
+
+  }
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+  
+  &  img{
+    width: 250px;
+    height: auto;
+  }
+
+  .links{
+    & >a{
+      font-size: 25px;
+      text-decoration: none;
+      margin: 10px;
+      background: green;
+      color: #FFF;
+      padding: 10px;
+      border-radius: 10px;
+      
+
+      &:hover{
+        transition: .6s;
+        background: #FFF;
+        color:green;
+      }
+    }
+  }
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 30px;
+  background: orange;
+  color: blue;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.wait{
+  p{
+    text-align: center;
+    font-size: 50px;
+    background: rgb(39, 224, 39);
+    width: 80%;
+    margin: auto;
+    color:blue;
+  }
+  .morty{
+    display: flex;
+    width: 600px;
+    height: auto;
+    margin-left: 400px;
+    margin-top: 40px;
+  }
+}
+
+.home{
+  margin-top: -90px;
+
+  & img{
+    width: 300px;
+    height: auto;
+    margin-left: 390px;
+  }
+
+  & p{
+    font-size: 30px;
+    text-align: center;
+  }
+}
